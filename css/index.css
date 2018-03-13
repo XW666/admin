@@ -1,0 +1,178 @@
+body{
+    background-color: #eee !important;
+}
+a{
+	text-decoration: none;
+
+}
+.wrapwrap {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+.wrapwrap > main {
+    height: 100%;
+}
+/*登录*/
+.body_login > .navbar-default{
+    background-color: #0083c7;
+    border-color: #0083c7;
+    color: #fff;
+}
+.body_login > .navbar-default p{
+  line-height: 48px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+.body_form input{
+  height: 45px;
+}
+.body_form label{
+  font-size: 16px;
+}
+/*注册*/
+.body_login .input-group-addon{
+background-color: transparent;
+border:none;
+color: #ddd;
+}
+.body_login .input-group-addon > i{
+  font-size: 24px;
+}
+/*头部*/
+header{
+    position: relative;
+    height: 52px;
+    z-index: 1;
+}
+header > .nav{
+	width:100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #0083c7;
+    position: fixed;
+}
+header .nav-tabs{
+    border-bottom: none;
+}
+header > .nav > li{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+header > .nav > li > a{
+    height:initial;
+    line-height: 30px;
+    color: #fff;
+    border-radius:0px;
+     margin-right: 0 ;
+}
+
+header .nav-tabs>li.active>a, 
+header .nav-tabs>li.active>a:focus,
+header .nav-tabs>li.active>a:hover{
+border:none;
+color: #fff;
+background-color: #0079b7;
+}
+/*中间内容*/
+.tab-pane .panel{
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.tab-pane .panel-default{
+    border:none;
+}
+.tab-pane  .padd{
+padding: 0px 0 10px 0;
+}
+.tab-pane .panel h4
+{
+  line-height: 25px;
+}
+.tab-pane .panel .panel-body > p
+{
+  line-height: 25px;
+  text-indent: 2em;
+}
+.tab-pane .panel-body > .table-condensed >tbody>tr>td{
+border-top: none;
+border-bottom: 1px solid #ddd;
+}
+.tab-pane .panel .panel-heading p{
+    font-size: 18px;
+}
+.tab-pane .panel-body{
+background-color: #fff;
+}
+.tab-pane .panel h4 > span{
+   padding: 0 15px;
+   color: #666;
+}
+.tab-pane .panel-default>.panel-heading{
+   margin-bottom: 10px;
+}
+.tab-pane .panel-default>.panel-heading  > a{
+   z-index: 1;
+}
+.tab-pane .panel .table th{
+  font-weight: normal;
+  color: #333;
+   border-bottom-width: 0px;
+   background-color: #eee;
+}
+ .tab-pane .panel .table td{
+    color: #666;
+ }
+ .form-horizontal > .form-group > p{
+    color: red;
+ }
+ .panel-body > textarea{
+    margin-top: 10px;
+    width: 100%;
+    border:1px solid #ddd;
+ }
+ .form-horizontal > .form-group label{
+    padding-top: 8px;
+ }
+ .panel-body .pagination{
+    margin: 0 0 10px 0;
+    float: right;
+ }
+ .panel_from .btn{
+  margin-left:5%;
+ }
+/*适应ipad*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .tab-pane .panel .table th{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+
+/*适应iphone6*/
+@media (max-width: 667px){
+    body{
+        font-size: 14px !important;
+    }
+     .user_body > .table>tbody>tr>td, 
+     .user_body > .table>thead>tr>th {
+        padding: 3px !important;
+    }
+}
+
+/*适应iphone5*/
+@media (max-width: 320px){
+    body{
+        font-size: 12px !important;
+    }
+    .user_body > .table>tbody>tr>td, 
+    .user_body > .table>thead>tr>th {
+      padding: 2px !important;
+    }
+}
+
